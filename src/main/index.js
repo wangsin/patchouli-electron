@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron' // eslint-disable-line
+import { app, ipcMain, BrowserWindow } from 'electron' // eslint-disable-line
 import '../renderer/store';
 
 /**
@@ -22,6 +22,10 @@ function createWindow() {
     height: 563,
     useContentSize: true,
     width: 1000,
+    frame: false,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: true,
+    icon: 'src/renderer/assets/patchouli-logo-alpha.png',
   });
 
   mainWindow.loadURL(winURL);
@@ -42,6 +46,28 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   if (mainWindow === null) {
     createWindow();
+  }
+});
+
+ipcMain.on('window-min', () => {
+  if (mainWindow !== null) {
+    mainWindow.minimize();
+  }
+});
+
+ipcMain.on('window-max', () => {
+  if (mainWindow !== null) {
+    if (mainWindow.isMaximized()) {
+      mainWindow.unmaximize();
+      return;
+    }
+    mainWindow.maximize();
+  }
+});
+
+ipcMain.on('window-close', () => {
+  if (mainWindow !== null) {
+    mainWindow.close();
   }
 });
 
