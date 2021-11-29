@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <custom-header/>
     <div class="main-body">
-      <div class="sidebar-left"></div>
+      <custom-sidebar class="sidebar-left"/>
       <router-view class="router-view-body"></router-view>
     </div>
   </div>
@@ -10,9 +11,10 @@
 
 <script>
   import CustomHeader from './components/toolkit/CustomHeader/CustomHeader';
+  import CustomSidebar from './components/toolkit/CustomSidebar/CustomSidebar.vue';
   export default {
     name: 'patchouli-electron',
-    components: { CustomHeader },
+    components: { CustomHeader, CustomSidebar },
   };
 </script>
 
@@ -34,5 +36,10 @@
   width: calc(100% - 60px);
   position: fixed;
   margin-left: 60px;
+}
+
+@font-face{
+  font-family: Jet-Mono;
+  src: url("./assets/fonts/JetBrainsMono-Regular.woff2");
 }
 </style>

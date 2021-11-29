@@ -2,7 +2,7 @@
   <div class="header">
     <div class="title-group">
       <img src="src/renderer/assets/patchouli-logo-alpha.png" class="header-icon" alt="icon">
-      Patchouli Electron Branch Alpha v0.0.1
+      Patchouli Electron Branch Alpha v0.0.1 - 开发版本
     </div>
     <div class="btn-group">
       <button class="btn btn-close" @click="close()"></button>
@@ -41,6 +41,8 @@ export default {
   align-items: center;
   -webkit-app-region: drag;
   background-color: gray;
+  font-family: Jet-Mono, '思源黑体', 'Source Sans Pro', sans-serif;
+  font-size: 12px;
 }
 
 .header-icon {
