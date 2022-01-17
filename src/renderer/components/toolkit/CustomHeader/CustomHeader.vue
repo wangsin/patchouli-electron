@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="title-group">
-      <img src="src/renderer/assets/patchouli-logo-alpha.png" class="header-icon" alt="icon">
+      <img src="src/renderer/assets/PatchouliLogoVersion1.png" class="header-icon" alt="icon">
       Patchouli Electron Branch Alpha v0.0.1 - 开发版本
     </div>
     <div class="btn-group">

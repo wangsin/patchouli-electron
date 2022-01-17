@@ -25,7 +25,7 @@ function createWindow() {
     frame: false,
     titleBarStyle: 'hidden',
     titleBarOverlay: true,
-    icon: 'src/renderer/assets/patchouli-logo-alpha.png',
+    icon: 'src/renderer/assets/PatchouliLogoVersion1.png',
   });
 
   mainWindow.loadURL(winURL);
