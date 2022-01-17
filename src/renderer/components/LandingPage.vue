@@ -1,22 +1,12 @@
 <template>
   <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
+    <img id="logo" src="src/renderer/assets/PatchouliLogoVersion1.png" alt="electron-vue" style="width: 20%;">
     <main>
       <div class="left-side">
         <span class="title">
-          Welcome to your new project!
+          欢迎使用Patchouli工具
         </span>
-        <system-information></system-information>
-      </div>
-
-      <div class="right-side">
-        <div class="doc">
-          <div class="title alt">Other Documentation</div>
-          <button class="alt" @click="jumpToRouter('/system')">SystemInformationRouter</button>
-          <button class="alt" @click="open('https://vuejs.org/v2/guide/')">TestTouchBar</button>
-          <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
-          <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
-        </div>
+<!--        <system-information></system-information>-->
       </div>
     </main>
   </div>
@@ -48,7 +38,7 @@
     padding: 0;
   }
 
-  body { font-family: 'Source Sans Pro', sans-serif; }
+  body { font-family: 'Microsoft YaHei UI Light', 'Source Sans Pro', sans-serif; }
 
   #wrapper {
     background:
