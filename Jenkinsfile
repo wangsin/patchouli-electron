@@ -5,6 +5,7 @@ node {
      sh 'echo $PATH';
      sh 'env';
      sh 'npm --version';
+     sh 'pwd';
     }
     stage('test-unit'){
      sh 'npm install';
