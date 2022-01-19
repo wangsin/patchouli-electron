@@ -12,3 +12,4 @@ thumbs.db
 
 # 项目排除路径
 /dist/
+.idea
