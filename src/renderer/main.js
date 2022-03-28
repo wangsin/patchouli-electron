@@ -1,7 +1,5 @@
 import Vue from 'vue';
 import axios from 'axios';
-import element from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 
 import App from './App';
 import router from './router';
@@ -17,5 +15,4 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  element,
 }).$mount('#app');

@@ -74,8 +74,8 @@ export default {
   border: none;
   color: white;
   display: inline-block;
-  height: 12px;
-  width: 12px;
+  height: 16px;
+  width: 16px;
   background-color: #e5e5e5;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;

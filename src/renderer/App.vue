@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <custom-header/>
     <div class="main-body">
       <custom-sidebar class="sidebar-left"/>
@@ -19,6 +18,7 @@
 </script>
 
 <style>
+@import url('./assets/css/font-awesome-4.7.0/css/font-awesome.min.css');
 .main-body {
   display: flex;
   flex-direction: row;
@@ -42,4 +42,5 @@
   font-family: Jet-Mono;
   src: url("./assets/fonts/JetBrainsMono-Regular.woff2");
 }
+
 </style>
